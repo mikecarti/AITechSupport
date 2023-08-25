@@ -1,0 +1,20 @@
+# docker-compose.yml
+version: '3'
+services:
+  asker-bot:
+    build:
+      context: asker_bot
+    container_name: asker_container
+
+  helpdesk:
+    build:
+      context: ./helpdesk
+    container_name: helpdesk_container
+
+  landing:
+    build:
+      context: ./landing
+    container_name: landing_container
+    ports:
+      - "127.0.0.1:5000:5000"
+
