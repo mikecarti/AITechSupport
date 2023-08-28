@@ -9,11 +9,13 @@ To run it
 ```
 git clone https://github.com/NeuroSquare/NeuroWeb -b dev
 cd NeuroWeb
-docker-compose up --build #(-d for detached)
+docker-compose up --build ("-d" for detached)
 ```
 
 To stop it / Rerun
 ```
-docker-compose down --remove-orphans #(stop)
-docker-compose up --build #(-d for detached) (run)
+# stop
+docker-compose down --remove-orphans
+# run
+docker-compose up --build ("-d" for detached)
 ```
