@@ -17,4 +17,6 @@ services:
     container_name: landing_container
     ports:
       - "80:80"
+    environment:
+      - RAN_BY_DOCKER=1
 
