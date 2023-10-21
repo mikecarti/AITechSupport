@@ -24,4 +24,4 @@ services:
 
 volumes:
   stats_database:
-    external: true
+  
