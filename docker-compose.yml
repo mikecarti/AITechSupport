@@ -10,6 +10,8 @@ services:
     build:
       context: helpdesk
     container_name: helpdesk_container
+    volumes:
+      - stats_database:/app/stats/
 
   landing:
     build:
@@ -20,3 +22,6 @@ services:
     environment:
       - RAN_BY_DOCKER=1
 
+volumes:
+  stats_database:
+    external: true
