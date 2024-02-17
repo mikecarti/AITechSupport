@@ -3,19 +3,19 @@ version: '3'
 services:
   asker-bot:
     build:
-      context: asker_bot
+      context: tech_support_demo_bot
     container_name: asker_container
 
   helpdesk:
     build:
-      context: helpdesk
+      context: tech_support_inference
     container_name: helpdesk_container
     volumes:
       - stats_database:/app/stats/
 
   landing:
     build:
-      context: landing
+      context: tech_support_landing
     container_name: landing_container
     ports:
       - "80:80"
