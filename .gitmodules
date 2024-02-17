@@ -1,0 +1,9 @@
+[submodule "tech_support_landing"]
+	path = tech_support_landing
+	url = https://github.com/mikecarti/tech_support_landing
+[submodule "tech_support_inference"]
+	path = tech_support_inference
+	url = https://github.com/mikecarti/tech_support_inference.git
+[submodule "tech_support_demo_bot"]
+	path = tech_support_demo_bot
+	url = https://github.com/mikecarti/tech_support_demo_bot.git
